@@ -9,7 +9,7 @@ st.set_page_config(page_title="Production Dashboard", layout="wide", initial_sid
 # Load and preprocess data
 @st.cache_data
 def load_data():
-    df_actual_time = pd.read_csv('data actual time work 2023.csv')
+    df_actual_time = pd.read_csv('data-actual-time-work-2023.csv')
 
     # Convert date columns to datetime
     df_actual_time['Posting Date'] = pd.to_datetime(df_actual_time['Posting Date'], errors='coerce')
